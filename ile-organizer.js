@@ -1,14 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 let folder = path.join(__dirname, "Organise Files");
-
 fs.access(folder, (err) => {
   if (err) {
     fs.mkdir(folder, (err) => {
       if (err) { n
         throw "Directory creation failed...";
       }
-      console.log("Directory created seccessfully...");
+      console.log("Directory created successfully...");
     });
   } else {
     console.log("The Directory Already Exists...");
@@ -21,8 +20,6 @@ files = fs.readdirSync(folder, (err) => {
     console.log("Files Read Successfully...");
   }
 });
-
-
 files.forEach((file) => {
   let DirName = path.extname(file).slice(1);
   let newpath=path.join(folder,DirName.toUpperCase());
@@ -36,7 +33,7 @@ files.forEach((file) => {
          fs.renameSync(sourcePath,destinationPath);
         }
         else{
-        console.log("Sub Directory created seccessfully...");
+        console.log("Sub Directory created successfully...");
         fs.renameSync(sourcePath,destinationPath);
     }});
     }
@@ -45,6 +42,5 @@ files.forEach((file) => {
         fs.renameSync(sourcePath,destinationPath);
     }
   }
-  
   )
 });
