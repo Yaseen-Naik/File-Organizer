@@ -26,11 +26,11 @@ File Organizer is a Node.js script designed to organize files within a specified
     cd file-organizer
 
 ### Usage
-1. Run the File-organiser to create an empty folder
+1. Run the File-organiser to create an empty folder named "Organise Files"
 
     ```bash
     node organizeFiles.js
-2. Copy all the files to the folder just created "Name: Organise Files" you want to sort 
+2. Copy all the files you want to sort to the folder just created
 
 3. Run the File-organiser again to sort the files present in the "Organise Files" Folder
 
