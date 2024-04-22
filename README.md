@@ -18,7 +18,7 @@ File Organizer is a Node.js script designed to organize files within a specified
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Yaseen-Naik/File-Organizer.git
+    git clone https://github.com/Yaseen-Naik/File-Organizer.git
 
 2. Navigate to the project directory:
    
